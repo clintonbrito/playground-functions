@@ -9,6 +9,16 @@ function compareTrue(word1, word2) {
 
 // Desafio 2 - Crie a função splitSentence
 
+function splitSentence(str) {
+  return str.split(' ');
+}
+
+console.log(splitSentence('BORA BILL'));
+
+// Para resolver esse desafio, utilizei esses dois textos como referência:
+// https://www.freecodecamp.org/news/javascript-split-how-to-split-a-string-into-an-array-in-js/
+// https://stackoverflow.com/questions/18473326/javascript-break-sentence-by-words
+
 // Desafio 3 - Crie a função concatName
 
 // Desafio 4 - Crie a função footballPoints
