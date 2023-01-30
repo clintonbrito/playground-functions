@@ -21,6 +21,18 @@ console.log(splitSentence('BORA BILL'));
 
 // Desafio 3 - Crie a função concatName
 
+let array = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
+
+function concatName(firstItem, lastItem) {
+  firstItem = array[0];
+  lastItem = array[array.length - 1];
+  return `${firstItem}, ${lastItem}`;
+}
+
+console.log(concatName(array['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
+
+// Referência para resolver essa questão: https://www.geeksforgeeks.org/get-the-first-and-last-item-in-an-array-using-javascript/
+
 // Desafio 4 - Crie a função footballPoints
 
 // Desafio 5 - Crie a função highestCount
