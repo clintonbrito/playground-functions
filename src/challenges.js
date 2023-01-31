@@ -49,16 +49,16 @@ console.log(footballPoints(1, 2));
 
 // Desafio 5 - Crie a função highestCount
 
-let array2 = [9, 1, 2, 3, 9, 5, 7];
-let array3 = [];
+let arr2 = [9, 1, 2, 3, 9, 5, 7];
+let arr3 = [];
 let highestNumber;
 
 function highestCount(array2) {
   for (let i = 0; i < array2.length; i += 1) {
-    if (array2[i] > )
+    if (arr2[i] > )
   }
 
-  return array3;
+  return arr3;
 }
 
 // function highestCount(array2) {
