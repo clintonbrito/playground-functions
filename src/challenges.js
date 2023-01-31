@@ -21,15 +21,23 @@ console.log(splitSentence('BORA BILL'));
 
 // Desafio 3 - Crie a função concatName
 
+// let array = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
+
+// function concatName(firstItem, lastItem) {
+//   firstItem = array[0];
+//   lastItem = array[array.length - 1];
+//   return `${firstItem}, ${lastItem}`;
+// }
+
 let array = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
 
-function concatName(firstItem, lastItem) {
-  firstItem = array[0];
-  lastItem = array[array.length - 1];
+function concatName() {
+  let [firstItem,,,lastItem] = array;
   return `${firstItem}, ${lastItem}`;
 }
 
 // Referência para resolver essa questão: https://www.geeksforgeeks.org/get-the-first-and-last-item-in-an-array-using-javascript/
+// Para corrigir o erro do destructuring assignment do array, utilizei este link, fornecido pelo colega da turma Henrique Ribeiro: https://www.freecodecamp.org/news/array-and-object-destructuring-in-javascript/
 
 // Desafio 4 - Crie a função footballPoints
 
@@ -40,6 +48,25 @@ function footballPoints(wins, ties) {
 console.log(footballPoints(1, 2));
 
 // Desafio 5 - Crie a função highestCount
+
+let array2 = [9, 1, 2, 3, 9, 5, 7];
+let array3 = [];
+let highestNumber;
+
+function highestCount(array2) {
+  for (let i = 0; i < array2.length; i += 1) {
+    if (array2[i] > )
+  }
+
+  return array3;
+}
+
+// function highestCount(array2) {
+//   let largestNumber = Math.max(...array2);
+//   return largestNumber;
+// }
+
+// console.log(highestCount(array2));
 
 // Desafio 6 - Crie as funções calcTriangleArea, calcRectangleArea e calcAllAreas
 
