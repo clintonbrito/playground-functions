@@ -29,11 +29,15 @@ function concatName(firstItem, lastItem) {
   return `${firstItem}, ${lastItem}`;
 }
 
-console.log(concatName(array['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
-
 // Referência para resolver essa questão: https://www.geeksforgeeks.org/get-the-first-and-last-item-in-an-array-using-javascript/
 
 // Desafio 4 - Crie a função footballPoints
+
+function footballPoints(wins, ties) {
+  return (wins * 3) + ties;
+}
+
+console.log(footballPoints(1, 2));
 
 // Desafio 5 - Crie a função highestCount
 
