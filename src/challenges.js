@@ -49,12 +49,12 @@ console.log(footballPoints(1, 2));
 
 // Desafio 5 - Crie a função highestCount
 
-let highestNumber = 0;
+let highestNumber = numbers[0];
 let counter = 0;
 
 // eslint-disable-next-line sonarjs/cognitive-complexity
 function highestCount(numbers) {
-  for (let index = 0; index < numbers.length; index += 1) {
+  for (let index = 1; index < numbers.length; index += 1) {
     if (numbers[index] > highestNumber) {
       highestNumber = numbers[index];
     }
