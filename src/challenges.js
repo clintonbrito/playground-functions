@@ -49,18 +49,38 @@ console.log(footballPoints(1, 2));
 
 // Desafio 5 - Crie a função highestCount
 
-let largestNumber = 0;
-function highestCount(arr2) {
-  for (let i = 0; i < arr2.length; i += 1) {
-    if (arr2[i] > largestNumber) {
-      largestNumber = arr3[i];
+let highestNumber = 0;
+let counterHighestNumber = 0;
+
+// eslint-disable-next-line sonarjs/cognitive-complexity
+function highestCount(numbers) {
+  for (let index = 0; index < numbers.length; index += 1) {
+    if (numbers[index] > highestNumber) {
+      highestNumber = numbers[index];
     }
   }
-  return arr3;
+  for (let index2 = 0; index2 < numbers.length; index2 += 1) {
+    if (numbers[index2] === highestNumber) {
+      counterHighestNumber += 1;
+    }
+  }
+  return highestCount;
 }
-let arr2 = [9, 1, 2, 3, 9, 5, 7];
-let arr3 = [];
-console.log(highestCount(arr3));
+
+console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
+
+// let largestNumber = 0;
+// function highestCount(arr2) {
+//   for (let i = 0; i < arr2.length; i += 1) {
+//     if (arr2[i] > largestNumber) {
+//       largestNumber = arr3[i];
+//     }
+//   }
+//   return arr3;
+// }
+// let arr2 = [9, 1, 2, 3, 9, 5, 7];
+// let arr3 = [];
+// console.log(highestCount(arr3));
 
 // Desafio 6 - Crie as funções calcTriangleArea, calcRectangleArea e calcAllAreas
 
