@@ -36,6 +36,8 @@ function concatName() {
   return `${firstItem}, ${lastItem}`;
 }
 
+console.log(concatName());
+
 // Referência para resolver essa questão: https://www.geeksforgeeks.org/get-the-first-and-last-item-in-an-array-using-javascript/
 // Para corrigir o erro do destructuring assignment do array, utilizei este link, fornecido pelo colega da turma Henrique Ribeiro: https://www.freecodecamp.org/news/array-and-object-destructuring-in-javascript/
 
@@ -49,16 +51,16 @@ console.log(footballPoints(1, 2));
 
 // Desafio 5 - Crie a função highestCount
 
-let highestNumber = numbers[0];
-let counter = 0;
-
 // eslint-disable-next-line sonarjs/cognitive-complexity
 function highestCount(numbers) {
+  let highestNumber = numbers[0];
+
   for (let index = 1; index < numbers.length; index += 1) {
     if (numbers[index] > highestNumber) {
       highestNumber = numbers[index];
     }
   }
+  let counter = 0;
   for (let index2 = 0; index2 < numbers.length; index2 += 1) {
     if (numbers[index2] === highestNumber) {
       counter += 1;
