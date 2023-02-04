@@ -32,7 +32,7 @@ console.log(splitSentence('BORA BILL'));
 let array = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
 
 function concatName() {
-  let [firstItem,,,lastItem] = array;
+  let [firstItem,,, lastItem] = array;
   return `${firstItem}, ${lastItem}`;
 }
 
@@ -66,8 +66,6 @@ function highestCount(numbers) {
   }
   return counter;
 }
-
-console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
 
 // let largestNumber = 0;
 // function highestCount(arr2) {
