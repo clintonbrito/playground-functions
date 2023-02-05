@@ -131,11 +131,43 @@ function catAndMouse(mouse, cat1, cat2) {
   return 'os gatos trombam e o rato foge';
 }
 
-console.log(catAndMouse(0, 1, 1));
+console.log(catAndMouse(2, 1, 1));
+
+// Utilizei essa pergunta do Stack Overflow para saber como converter os números negativos em positivos do cálculo das distâncias: https://stackoverflow.com/questions/4652104/convert-a-negative-number-to-a-positive-one-in-javascript
 
 // Desafio 8 - Crie a função fizzBuzz
 
+function fizzBuzz(arrayNumbers) {
+  let arrayNumbers = arrayNumbers[0];
+  let arrayStrings = [0];
+  return arrayStrings;
+}
+
+console.log(fizzBuzz([2, 15, 7, 9, 45]));
+
 // Desafio 9 - Crie a função encode e a função decode
+
+function encode(string) {
+  let newString = string;
+  let letters = ['a', 'e', 'i', 'o', 'u'];
+  let numbers = ['1', '2', '3', '4', '5'];
+
+  for (let index = 0; index < string.length; index += 1) {
+    newString = newString.split(letters[index]).join(numbers[index]);
+  }
+  return newString
+}
+
+function decode(string) {
+  let newString = string;
+  let numbers = ['1', '2', '3', '4', '5'];
+  let letters = ['a', 'e', 'i', 'o', 'u'];
+
+  for (let index = 0; index < string.length; index += 1) {
+    newString = newString.split(numbers[index]).join(letters[index]);
+  }
+  return newString
+}
 
 // Desafio 10 - Crie a função techList
 
