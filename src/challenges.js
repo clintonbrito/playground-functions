@@ -96,10 +96,9 @@ function calcAllAreas(base, height, form) {
   if (form === 'triângulo') {
     return `O valor da área do triângulo é: ${calcTriangleArea}`;
   } if (form === 'retângulo') {
-    console.log(`O valor da área do retângulo é: ${calcRectangleArea}`);
-  } else {
-    return 'Não foi possível fazer o cálculo, insira uma forma geométrica válida';
+    return `O valor da área do retângulo é: ${calcRectangleArea}`;
   }
+  console.log('Não foi possível fazer o cálculo, insira uma forma geométrica válida');
 }
 
 // Desafio 7 - Crie a função catAndMouse
