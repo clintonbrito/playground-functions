@@ -29,14 +29,13 @@ console.log(splitSentence('BORA BILL'));
 //   return `${firstItem}, ${lastItem}`;
 // }
 
-let array = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
-
-function concatName() {
-  let [firstItem,,, lastItem] = array;
+function concatName(array) {
+  let firstItem = array[0];
+  let lastItem = array.length - 1;
   return `${firstItem}, ${lastItem}`;
 }
 
-console.log(concatName());
+console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
 
 // Referência para resolver essa questão: https://www.geeksforgeeks.org/get-the-first-and-last-item-in-an-array-using-javascript/
 // Para corrigir o erro do destructuring assignment do array, utilizei este link, fornecido pelo colega da turma Henrique Ribeiro: https://www.freecodecamp.org/news/array-and-object-destructuring-in-javascript/
