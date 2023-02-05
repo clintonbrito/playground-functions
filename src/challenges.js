@@ -93,26 +93,26 @@ function calcRectangleArea(base, height) {
 
 function calcAllAreas(base, height, form) {
   if (form === 'triângulo') {
-    return `O valor da área do triângulo é: ${calcTriangleArea(base, height)}`;
+    return `O valor da área do triângulo é de: ${calcTriangleArea(base, height)}`;
   } if (form === 'retângulo') {
-    return `O valor da área do retângulo é: ${calcRectangleArea(base, height)}`;
+    return `O valor da área do retângulo é de: ${calcRectangleArea(base, height)}`;
   }
   return 'Não foi possível fazer o cálculo, insira uma forma geométrica válida';
 }
 
 // Desafio 7 - Crie a função catAndMouse
 
-function catAndMouse (mouse, cat1, cat2) {
-  if (cat2 - cat1 > 0 && cat2 > mouse) {
-    return `cat1`;
-  }
-    else if(cat1 - cat2 > 0 && cat1 > mouse) {
-      return `cat2`;
-    }
-    return `os gatos trombam e o rato foge`;
-}
+// function catAndMouse (mouse, cat1, cat2) {
+//   if (cat2 - cat1 > 0 && cat2 > mouse) {
+//     return `cat1`;
+//   }
+//     else if(cat1 - cat2 > 0 && cat1 > mouse) {
+//       return `cat2`;
+//     }
+//     return `os gatos trombam e o rato foge`;
+// }
 
-console.log(catAndMouse(1, 3, 4));
+// console.log(catAndMouse(1, 3, 4));
 
 // Desafio 8 - Crie a função fizzBuzz
 
