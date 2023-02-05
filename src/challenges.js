@@ -112,8 +112,6 @@ function catAndMouse (mouse, cat1, cat2) {
     return `os gatos trombam e o rato foge`;
 }
 
-asfd
-
 console.log(catAndMouse(1, 3, 4));
 
 // Desafio 8 - Crie a função fizzBuzz
