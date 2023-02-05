@@ -137,13 +137,13 @@ console.log(catAndMouse(2, 1, 1));
 
 // Desafio 8 - Crie a função fizzBuzz
 
-function fizzBuzz(arrayNumbers) {
-  let arrayNumbers = arrayNumbers[0];
-  let arrayStrings = [0];
-  return arrayStrings;
-}
+// function fizzBuzz(arrayNumbers) {
+//   let arrayNumbers = arrayNumbers[0];
+//   let arrayStrings = [0];
+//   return arrayStrings;
+// }
 
-console.log(fizzBuzz([2, 15, 7, 9, 45]));
+// console.log(fizzBuzz([2, 15, 7, 9, 45]));
 
 // Desafio 9 - Crie a função encode e a função decode
 
@@ -155,7 +155,7 @@ function encode(string) {
   for (let index = 0; index < string.length; index += 1) {
     newString = newString.split(letters[index]).join(numbers[index]);
   }
-  return newString
+  return newString;
 }
 
 function decode(string) {
@@ -166,7 +166,7 @@ function decode(string) {
   for (let index = 0; index < string.length; index += 1) {
     newString = newString.split(numbers[index]).join(letters[index]);
   }
-  return newString
+  return newString;
 }
 
 // Desafio 10 - Crie a função techList
