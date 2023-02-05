@@ -32,7 +32,7 @@ console.log(splitSentence('BORA BILL'));
 function concatName(array) {
   let firstItem = array[0];
   let lastItem = array[array.length - 1];
-  return `${firstItem}, ${lastItem}`;
+  return `${lastItem}, ${firstItem}`;
 }
 
 console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
