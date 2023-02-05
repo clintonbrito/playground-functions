@@ -100,19 +100,38 @@ function calcAllAreas(base, height, form) {
   return 'Não foi possível fazer o cálculo, insira uma forma geométrica válida';
 }
 
+// Após quebrar bastante a cabeça, os colegas Aloisio Ribeiro e Lionel Miranda me ajudaram a resolver erros bobos na sintaxe que estavam acarretando tanto erro no Lint quanto no retorno da string da função calcAllAreas.
+
 // Desafio 7 - Crie a função catAndMouse
 
-// function catAndMouse (mouse, cat1, cat2) {
-//   if (cat2 - cat1 > 0 && cat2 > mouse) {
-//     return `cat1`;
+// function catAndMouse(mouse, cat1, cat2) {
+
+//   if ((cat2 - cat1 > 0 && cat2 > mouse) || (cat2 - cat1 > 0 && mouse > cat2)) {
+//     return 'cat1';
 //   }
-//     else if(cat1 - cat2 > 0 && cat1 > mouse) {
-//       return `cat2`;
-//     }
-//     return `os gatos trombam e o rato foge`;
+//   if ((cat1 - cat2 > 0 && cat1 > mouse) || (cat1 - cat2 > 0 && mouse > cat1)) {
+//     return 'cat2';
+//   }
+//   return 'os gatos trombam e o rato foge';
 // }
 
-// console.log(catAndMouse(1, 3, 4));
+// console.log(catAndMouse(5, 2, 1));
+
+function catAndMouse(mouse, cat1, cat2) {
+  const distanceCat1 = cat1 - mouse;
+  const distanceCat2 = cat2 - mouse;
+  const distance2Cat1 = Math.abs(distanceCat1);
+  const distance2Cat2 = Math.abs(distanceCat2);
+  if (distance2Cat1 < distance2Cat2) {
+    return 'cat1';
+  }
+  if (distance2Cat2 < distance2Cat1) {
+    return 'cat2';
+  }
+  return 'os gatos trombam e o rato foge';
+}
+
+console.log(catAndMouse(0, 1, 1));
 
 // Desafio 8 - Crie a função fizzBuzz
 
